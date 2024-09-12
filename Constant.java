@@ -1,3 +1,9 @@
+/***
+ * Suman Kumari
+ * 11-09-2024
+ * The class contains a collection of constant string values that are used 
+ * throughout the application for user prompts, messages, and other fixed text.
+ */
 package Week_2_Assignment_2;
 
 public class Constant {

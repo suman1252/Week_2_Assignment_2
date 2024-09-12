@@ -28,6 +28,7 @@ public class MyString {
                     CountConsonants();
                     break;
                 case 4:
+//                	System.out.println("");
                     CamelCaseConversion();
                     break;
                 case 5:
@@ -60,6 +61,7 @@ public class MyString {
             input.next();
         }
     }
+    // Recursive method to find the nth Fibonacci number
     public static long NthFibonacci(int number) {
         if (number == 0) {
             return 0;
@@ -82,6 +84,7 @@ public class MyString {
         int consonantCount = countConsonants(originalString, 0);
         System.out.println(Constant.OUTPUT + consonantCount);
     }
+    // Method to count consonants in a string
     public static int countConsonants(String string, int index) {
         if (index >= string.length()) {
             return 0;
@@ -114,6 +117,7 @@ public class MyString {
             System.out.println(Constant.INVALID_CHOICE);
         }
     }
+    // Recursive method to convert a string to snake_case
     public static String toSnakeCase(String string, int index) {
         if (index >= string.length()) {
             return "";
@@ -129,6 +133,7 @@ public class MyString {
             return character + toSnakeCase(string, index + 1);
         }
     }
+    // Recursive method to convert a snake_case string to camelCase
     public static String toCamelCase(String string, int index, boolean capitalizeNext) {
         if (index >= string.length()) {
             return "";
@@ -161,9 +166,11 @@ representation.
             System.out.println(Constant.VALID_BINARY_NUMBER);
         }
     }
+    // Method to validate if the string is a valid binary number
     public static boolean isValidBinary(String binaryString) {
         return binaryString.matches("[01]+");
     }
+    // Recursive method to convert a binary string to a decimal value
     public static int binaryToDecimal(String binaryString, int index) {
         if (index < 0) {
             return 0;
