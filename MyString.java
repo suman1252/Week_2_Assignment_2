@@ -1,6 +1,8 @@
 /***
  * Suman Kumari
  * 11-09-2024
+ * Program is designed to offer a simple interface for performing various 
+ * string-related and number conversion tasks.
  */
 package Week_2_Assignment_2;
 import java.util.Scanner;

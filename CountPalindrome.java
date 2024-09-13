@@ -1,3 +1,9 @@
+/***
+ * Suman Kumari 
+ * 12-09-2024
+ * Purpose of this program is to count the number of palindrome 
+ * substrings in a given string entered by the user.
+ */
 package Week_2_Assignment_2;
 import java.util.Scanner;
 
