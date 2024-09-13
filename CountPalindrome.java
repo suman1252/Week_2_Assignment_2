@@ -28,32 +28,32 @@ public class CountPalindrome {
     }
 
     // Method to count all palindrome substrings in the string
-    public static int countPalindromeSubstrings(String string) {
-        return countPalindromesRecursive(string, 0);
+    public static int countPalindromeSubstrings(String input) {
+        return countPalindromesRecursive(input, 0);
     }
 
     // Recursive function to traverse the string and count palindromes at each index
-    private static int countPalindromesRecursive(String string, int index) {
-        if (index == string.length()) {
+    private static int countPalindromesRecursive(String input, int index) {
+        if (index == input.length()) {
             return 0;
         }
-        int count = countPalindromesFromCenter(string, index, index) 
-                  + countPalindromesFromCenter(string, index, index + 1);
-        return count + countPalindromesRecursive(string, index + 1);
+        int count = countPalindromesFromCenter(input, index, index) 
+                  + countPalindromesFromCenter(input, index, index + 1);
+        return count + countPalindromesRecursive(input, index + 1);
     }
 
     // Recursive function to count palindromes expanding from a center (for odd and even lengths)
-    private static int countPalindromesFromCenter(String string, int left, int right) {
-        if (left < 0 || right >= string.length() || string.charAt(left) != string.charAt(right)) {
+    private static int countPalindromesFromCenter(String input, int left, int right) {
+        if (left < 0 || right >= input.length() || input.charAt(left) != input.charAt(right)) {
             return 0;
         }
-        return 1 + countPalindromesFromCenter(string, left, right + 1);
+        return 1 + countPalindromesFromCenter(input, left, right + 1);
     }
 
     // Method to check if a string is an integer
-    private static boolean isInteger(String str) {
+    private static boolean isInteger(String input) {
         try {
-            Integer.parseInt(str);
+            Integer.parseInt(input);
             return true; 
         } catch (NumberFormatException e) {
             return false;
