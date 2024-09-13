@@ -6,10 +6,8 @@
  */
 package Week_2_Assignment_2;
 import java.util.Scanner;
-
 public class MyString {
     static Scanner input = new Scanner(System.in);
-
     public static void main(String[] args) {
         while (true) {
             System.out.println(Constant.SELECT_OPTION);
