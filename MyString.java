@@ -118,36 +118,36 @@ public class MyString {
         }
     }
     // Recursive method to convert a string to snake_case
-    public static String toSnakeCase(String string, int index) {
-        if (index >= string.length()) {
+    public static String toSnakeCase(String input, int index) {
+        if (index >= input.length()) {
             return "";
         }
-        char character = string.charAt(index);
+        char character = input.charAt(index);
         if (character == ' ') {
-            return "_" + toSnakeCase(string, index + 1);
+            return "_" + toSnakeCase(input, index + 1);
         }
         else if (Character.isUpperCase(character)) {
-            return "_" + Character.toLowerCase(character) + toSnakeCase(string, index + 1);
+            return "_" + Character.toLowerCase(character) + toSnakeCase(input, index + 1);
         }
         else {
-            return character + toSnakeCase(string, index + 1);
+            return character + toSnakeCase(input, index + 1);	
         }
     }
     // Recursive method to convert a snake_case string to camelCase
-    public static String toCamelCase(String string, int index, boolean capitalizeNext) {
-        if (index >= string.length()) {
+    public static String toCamelCase(String input, int index, boolean capitalizeNext) {
+        if (index >= input.length()) {
             return "";
         }
-        char character = string.charAt(index);
+        char character = input.charAt(index);
         if (character == '_') {
-            return toCamelCase(string, index + 1, true);
+            return toCamelCase(input, index + 1, true);
         }
         else {
             if (capitalizeNext) {
-                return Character.toUpperCase(character) + toCamelCase(string, index + 1, false);
+                return Character.toUpperCase(character) + toCamelCase(input, index + 1, false);
             }
             else {
-                return character + toCamelCase(string, index + 1, false);
+                return character + toCamelCase(input, index + 1, false);
             }
         }
     }

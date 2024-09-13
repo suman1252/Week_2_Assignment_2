@@ -25,5 +25,5 @@ public class Constant {
 	public static String BINARY_NUMBER = "Enter a binary number: ";
 	public static String VALID_BINARY_NUMBER = "Enter a valid binary number (e.g., 0101100).";
 	public static String STRING = "Enter any string (or type 'exit' to stop): ";
-	public static String VALID_STRING = "Please enter a valid string, not an integer.";
+	public static String VALID_STRING = "\nPlease enter a valid string, not an integer.";
 }

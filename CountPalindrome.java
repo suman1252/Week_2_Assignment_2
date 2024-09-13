@@ -23,7 +23,7 @@ public class CountPalindrome {
             }
 
             int result = countPalindromeSubstrings(string);
-            System.out.println("Input: " + string + " -> Output: " + result);
+            System.out.println("Input: " + string + " -> Output: " + result + "\n");
         }
     }
 
