@@ -5,7 +5,6 @@
  * throughout the application for user prompts, messages, and other fixed text.
  */
 package Week_2_Assignment_2;
-
 public class Constant {
 	public static String SELECT_OPTION = "\nSelect an Option: ";
 	public static String ENTER_0 = "Enter 0 for Exit: ";
